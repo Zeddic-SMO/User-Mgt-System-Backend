@@ -3,22 +3,6 @@ const { v4: uuidv4 } = require("uuid")
 const router = express.Router()
 const NewUser = require("../Models/UserModel")
 
-// data
-/* const Users = [
-  {
-    id: uuidv4(),
-    fullName: "Ortil Samuel M",
-    phone: 08133478014,
-    email: "samuel93ortil@gmail.com",
-  },
-  {
-    id: uuidv4(),
-    fullName: "Zonka Paul M",
-    phone: 07033479014,
-    email: "zortil@gmail.com",
-  },
-] */
-
 // Read all
 router.get("/", async (req, res) => {
   let users = await NewUser.find()

@@ -12,8 +12,7 @@ app.use(express.json())
 const router = require("./Routes/UsersRoute")
 app.use(router)
 
-// dbconnection
-
+// dbConnection
 const dbConnection = require("./db/dbConnect")
 dbConnection()
 
