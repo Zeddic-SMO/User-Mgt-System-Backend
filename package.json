@@ -1,0 +1,22 @@
+{
+  "name": "usermgtsytem",
+  "version": "1.0.0",
+  "description": "This is a fullstack user management system MERN ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Zeddic-SMO",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  }
+}
