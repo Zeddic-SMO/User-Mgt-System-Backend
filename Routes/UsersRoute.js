@@ -50,10 +50,7 @@ router.put("/update/:id", async (req, res) => {
 router.get("/view/:id", async (req, res) => {
   const user = await NewUser.findById(req.params.id)
 
-  if (!user)
-    return res
-      .status(404)
-      .send(`User with id ${req.params.id} does NOT exists!`)
+  if (!user) return res.status(404).send(`User with id ${id} does NOT exists!`)
 
   res.send(user)
 })
@@ -61,7 +58,7 @@ router.get("/view/:id", async (req, res) => {
 // Deleting a particular user
 router.delete("/delete/:id", async (req, res) => {
   const user = await NewUser.findByIdAndRemove(req.params.id)
-  if (!user) return res.status(404).send(`No User with the id ${req.params.id}`)
+  if (!user) return res.status(404).send(`No User with the id ${id}`)
   res.send(user)
 })
 
